@@ -18,8 +18,8 @@ if ($data !== null && isset($data['username']) && isset($data['password'])) {
         if($result->num_rows > 0){
             $new_query = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
             $result = $connection->query($new_query);
-            $row = $result->fetch_assoc();
             if($result->num_rows==1){
+                $row = $result->fetch_assoc();
                 echo json_encode(array(
                     'message' => 'User Signed In',
                     'status'  => 'S10003',

@@ -13,7 +13,7 @@ if($data!=null&& isset($data["link"])){
 
         try{
             $result = $connection->query($query);
-            if($result->num_rows>= 0){
+            if($result->num_rows> 0){
                 $row = $result->fetch_assoc();
                 echo json_encode(array(
                     'message' => 'Existing Rating Found',
