@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pete Crawler</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="./assets/pete-crawler-favicon-white.png">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar">
+		<div class="navbar__container">
+			<a href="#home" id="navbar__logo"><img src="./assets/logo-no-background.svg" width=80 height=80
+					alt="Pete Crawler"></img></a>
+			<div class="navbar__toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="navbar__menu">
+				<li class="navbar__item">
+					<a href="#home" class="navbar__links" id="home-page">Home</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#about" class="navbar__links" id="about-page">About</a>
+				</li>
+				<li class="navbar__item">
+					<a href="#services" class="navbar__links" id="services-page">Metrics</a>
+				</li>
+				<li class="navbar__btn">
+					<a href="#sign-up" class="button" id="signup">Get your Extension</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<div class="hero" id="home">
+		<div class="hero__container">
+			<h1 class="hero__heading">Analyze, Secure & </h1>
+			<h1 class="hero__heading"> <span>Elevate
+				</span></h1>
+			<p class=" hero__description">with Pete Crawler</p>
+			<div class="searchbox-wrap">
+				<input type="text" placeholder="Paste your link here">
+				<button><span class="analyze-btn">Analyze</span> </button>
+			</div>
+		</div>
+		<div class="integration">
+			<div class="grade-class" id="grade-id">
+				<h1 class="rating-label upper-label">Loading...please wait</h1>
+				<!-- Stars -->
+				<div class="star-collection" id="star-collection-id">
+					<span class="rating-star fa fa-star fa-4x" id="star-1"></span>
+					<span class="rating-star fa fa-star fa-4x" id="star-2"></span>
+					<span class="rating-star fa fa-star fa-4x" id="star-3"></span>
+					<span class="rating-star fa fa-star fa-4x" id="star-4"></span>
+					<span class="rating-star fa fa-star fa-4x" id="star-5"></span>
+				</div>
+				<h1 class="rating-label lower-label"></h1>
+			</div>
+
+			<section class="loading-wrapper">
+				<div class="loader">
+					<div class="loading one"></div>
+					<div class="loading two"></div>
+					<div class="loading three"></div>
+					<div class="loading four"></div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<!-- About Section -->
+	<div class="main" id="about">
+		<div class="main__container">
+			<div class="main__img--container">
+				<div class="main__img--card"><i class="fa fa-shield" style="font-size: 30rem;"></i></div>
+			</div>
+			<div class=" main__content">
+				<h2>We safeguard users from malware links</h2>
+				<p>
+					Detect and protect against malicious threats in real-time</p>
+				<button class="main__btn"><a href="#sign-up">Get your extension</a></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services Section -->
+	<div class="services" id="services">
+		<h1>Our Metrics</h1>
+		<div class="services__wrapper">
+			<div class="services__card">
+				<h2>Security</h2>
+				<p>Protects against malware</p>
+				<div class="services__btn"><button>Get Started</div>
+			</div>
+			<div class="services__card">
+				<h2>Performance </h2>
+				<p>Analyzes website speed</p>
+				<div class="services__btn"><button>Get Started</div>
+			</div>
+			<div class="services__card">
+				<h2>SEO </h2>
+				<p>Maximizes visibility</p>
+				<div class="services__btn"><button>Get Started</div>
+			</div>
+			<div class="services__card">
+				<h2>Best Practices</h2>
+				<p>Ensures adherence</p>
+				<div class="services__btn"><button>Get Started</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Features Section -->
+	<div class="main" id="sign-up">
+		<div class="main__container">
+			<div class="main__content">
+				<h1>Try us now</h1>
+				<h2>Get your Chrome Extension</h2>
+				<p>See how we perform magic</p>
+				<button class="main__btn"><a href="./assets/Pete-Crawler.zip"
+						download="Pete-Crawler">Download</a></button>
+			</div>
+			<div class="main__img--container">
+				<div class="main__img--card" id="card-2"><i class="fa fa-chrome" style="font-size: 25rem;"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Section -->
+	<div class="footer__container">
+		<div class="footer__links">
+			<div class="footer__links--wrapper">
+				<div class="footer__links--items">
+					<h2>About Us</h2>
+					<a href="/sign-up">How it works</a>
+					<a href="/sign-up">Testimonials</a>
+					<a href="/sign-up">Careers</a>
+					<a href="/sign-up">Terms of Services</a>
+				</div>
+				<div class="footer__links--items">
+					<h2>Contact Us</h2>
+					<a href="/sign-up">Contact</a>
+					<a href="/sign-up">Support</a>
+					<a href="/sign-up">Destinations</a>
+				</div>
+			</div>
+			<div class="footer__links--wrapper">
+				<div class="footer__links--items">
+					<h2>Videos</h2>
+					<a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+					<a href="/">Agency</a>
+				</div>
+				<div class="footer__links--items">
+					<h2>Social Media</h2>
+					<a href="/">Instagram</a> <a href="/">Facebook</a>
+					<a href="/">Youtube</a> <a href="/">Twitter</a>
+				</div>
+			</div>
+		</div>
+		<section class="social__media">
+			<div class="social__media--wrap">
+				<div class="footer__logo">
+					<a href="/" id="footer__logo">Pete Crawler</a>
+				</div>
+				<div class="website__rights">
+					<p>© 2024. All rights reserved</p>
+				</div>
+				<div class="social__icons">
+					<a href="/" class="social__icon--links">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="/" class="social__icon--links">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="/" class="social__icon--links">
+						<i class="fab fa-youtube"></i>
+					</a>
+					<a href="/" class="social__icon--links">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="app.js" type="module"></script>
+	<audio src="./assets/success.mp3" id="success"></audio>
+	<audio src="./assets/failure.mp3" id="failure"></audio>
+</body>
+
+</html>
