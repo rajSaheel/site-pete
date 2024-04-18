@@ -130,7 +130,6 @@ const analyze = async (url) => {
 			const response = await crawlAPI(url);
 			loading.style.display = "none"
 			if (response) {
-				console.log(response)
 				displayRating(response.total)
 			} else displayRating(undefined)
 		} catch (e) {

@@ -21,7 +21,7 @@ const crawlAPI = (url)=>{
             else if (response.status === "R10004") {
                 const scoresGlobal = await fetchLightHouseReport(url)
                 // console.log(scoresGlobal)
-                // let total = (scoresGlobal.seoScore + scoresGlobal.performanceScore + scoresGlobal.bestPracticesScore + scoresGlobal.securityScore) / 8
+                let total = (scoresGlobal.seoScore + scoresGlobal.performanceScore + scoresGlobal.bestPracticesScore + scoresGlobal.securityScore) / 8
                 response = await addRating({
                     uid: "W000",
                     link: url,
@@ -29,9 +29,10 @@ const crawlAPI = (url)=>{
                     performance: scoresGlobal.performanceScore,
                     bestPractices: scoresGlobal.bestPracticesScore,
                     security: scoresGlobal.securityScore,
-                    total:9
+                    total
                 })
-                resolve(scoresGlobal)
+                console.log(total)
+                resolve(response)
             }else{
                 reject(null)
             }
