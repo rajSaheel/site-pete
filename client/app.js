@@ -122,6 +122,7 @@ const analyze = async (url) => {
 			alert("Please enter a valid URL")
 			return
 		}
+		if(!ready) return
 	clearStars()
 	ready = false
 	integrationClass.style.visibility = "visible"
